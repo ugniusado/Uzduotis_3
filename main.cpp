@@ -3,48 +3,67 @@
 #include <stdlib.h>
 #include <iomanip>
 using namespace std;
-#define n 5 ///STUDENTU SKAICIUS
+#define n 2 ///STUDENTU SKAICIUS
 struct Student
 {
-    string name;
-    string srname;
-    int nd;
+    string name; ///STUDENTO VARDAS
+    string srname; ///PAVARDE
+    int ndgrades[10];
     int egz;
-    double last;
+    double last; ///Galutinis pazymys
+    double mediana;
 };
-double findMedian(Student A[]);
+
 void read(Student A[])
 {for(int i = 0; i < n; i ++){
         cout << "Iveskite studento varda" << endl;
         cin >> A[i].name;
         cout << "Iveskite studento pavarde" << endl;
         cin >> A[i].srname;
-        cout << "Iveskite nd rezultatus" << endl;
-        cin >> A[i].nd;
-        cout << "Iveskite egz rezultatus" << endl;
+        cout << "Iveskite nd rezultatus(11 = vedimo pabaiga,zemiausias balas 1)" << endl;
+        int j = 0;
+        double vid =0;
+        while(true)
+        {
+            cin >> A[i].ndgrades[j];
+            if(A[i].ndgrades[j]==0){cout<<"Netinkas pazymys"<<endl;
+                cout<<"Programos pabaiga"<<endl;
+
+            }
+            else if (A[i].ndgrades[j]==11)break;
+            vid+=A[i].ndgrades[j];
+            j++;
+        }
+        double vidurkis = vid/j*1.0;
+        cout << "Egzamino rezultatas?" <<endl;
         cin >> A[i].egz;
+        A[i].last = vidurkis*0.4 + A[i].egz*0.6;
+        A[i].mediana = (vidurkis+A[i].egz)/2;
     }
+
 }
-void generate(Student A[])
-{
-    for(int  i = 0; i < n; i++)
+
+void generate(Student A[]) {
+    for(int i=0; i<n; i++)
     {
-        cout << "Iveskite studento varda" << endl;
-        cin >> A[i].name;
-        cout << "Iveskite studento pavarde" << endl;
-        cin >> A[i].srname;
-        A[i].nd = rand()%10+1;
-        A[i].egz = rand()%10+1;
+        double vid=0;
+        A[i].name = "Name" + to_string(rand()%100);
+        A[i].srname = "Sirname" + to_string(rand()%100);
+        for(int j=0; j<5; j++)
+        {
+            A[i].ndgrades[j] = rand()%10;
+            vid+=A[i].ndgrades[j];
+        }
+        double vidurkis = vid/5*1.0, egz;
+        A[i].egz = rand()%10;
+        A[i].last = vidurkis*0.4 + A[i].egz*0.6;
+        A[i].mediana = (vidurkis+A[i].egz)/2;
     }
 }
-void lastb(Student A[])
-{
-    for(int i = 0; i < n; i ++)
-        A[i].last = A[i].nd*0.4+A[i].egz*0.6;
-}
+
 void print(Student A[])
 {
-    cout << "PAVARDE     ||VARDAS      ||GALUTINIS BALAS||Mediana" << endl;
+    cout << "PAVARDE     ||VARDAS      ||GALUTINIS BALAS ||Mediana" << endl;
     for(int i =0; i < n; i ++)
     {
         cout << A[i].srname ;
@@ -59,27 +78,10 @@ void print(Student A[])
         for(int g=0; g <12; g++)
             cout <<" ";
         cout <<"||";
-        cout <<findMedian(A)<<endl;
+        cout << A[i].mediana<<endl;
+
 
     }
-}
-void sortByGalutinis(Student A[])
-{ int i, j;
-    Student B;
-    for (i = 0; i < n-1; i++)
-        for (j = 0; j < n-i-1; j++)
-            if (A[j].last > A[j+1].last)
-            { B = A[j];
-                A[j] = A[j+1];
-                A[j+1] = B;
-            }
-}
-double findMedian(Student A[])
-{
-    if (n % 2 != 0)
-        return (double)A[n / 2].last;
-
-    return (double)(A[(n - 1) / 2].last + A[n / 2].last) / 2.0;
 }
 int main() {
     Student A[n];
@@ -88,8 +90,6 @@ int main() {
     cin >> yes;
     if(yes)read(A);
     else generate(A);
-    lastb(A);
-    sortByGalutinis(A);
     print(A);
 
 }
