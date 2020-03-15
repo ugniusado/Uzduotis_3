@@ -5,34 +5,34 @@ Objektinio programavimo 2-os užduoties v0.5 repozitorija
 
 Su 1000 studentu
 
-![https://prnt.sc/rgtl7s](https://prnt.sc/rgtl7s)
+![https://prnt.sc/rgtl7s](https://raw.githubusercontent.com/ugniusado/Obj-Task2/v0.5/1000_list.png)
 
 Su 10000 studentu
 
-![https://prnt.sc/rgtlxa](https://prnt.sc/rgtlxa)
+![https://prnt.sc/rgtlxa](https://raw.githubusercontent.com/ugniusado/Obj-Task2/v0.5/10000_list.png)
 
 Su 100000 studentu
 
-![https://prnt.sc/rgtmj6](https://prnt.sc/rgtmj6)
+![https://prnt.sc/rgtmj6](https://raw.githubusercontent.com/ugniusado/Obj-Task2/v0.5/100000_list.png)
 
 Su 1000000 studentu
 
-![https://prnt.sc/rgtp23](https://prnt.sc/rgtp23)
+![https://prnt.sc/rgtp23](https://raw.githubusercontent.com/ugniusado/Obj-Task2/v0.5/1000000_list.png)
 
 **Naudojant konteinerio tipa std::deque**
 
 Su 1000 studentu
 
-![](https://prnt.sc/rgtrep)
+![](https://github.com/ugniusado/Obj-Task2/blob/v0.5/1000_deque.png?raw=true)
 
 Su 10000 studentu 
 
-![](https://prnt.sc/rgtrs2)
+![](https://raw.githubusercontent.com/ugniusado/Obj-Task2/v0.5/10000_deque.png)
 
 Su 100000 Studentu 
 
-![](https://prnt.sc/rgtvdz)
+![](https://raw.githubusercontent.com/ugniusado/Obj-Task2/v0.5/100000_deque.png)
 
 Su 1000000 Studentu
 
-![](https://prnt.sc/rgtv3y)
+![](https://raw.githubusercontent.com/ugniusado/Obj-Task2/v0.5/1000000_deque.png)
