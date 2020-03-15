@@ -1,6 +1,8 @@
 # Obj-Task2 v0.5
 Objektinio programavimo 2-os užduoties v0.5 repozitorija
 
+**KOMPIUTERIO SPECS CPU - Intel i5 8kartos 1.6GHz; RAM 2x4 2400MHz, SSD 256GB - speed 682 MB/s**
+
 **Naudojant Konteinerio tipa std::list**
 
 Su 1000 studentu
