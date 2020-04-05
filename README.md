@@ -34,7 +34,7 @@ V0.1 praplėsta versija, pridėtas opcija skaityti iš failo, bei rušiuoti paga
 
 *taip pat bandyta implementuoti error handlinimui skirtos komandos **try{} throw() ir catch()**
 
-## [v0.4](https://github.com/ugniusado/Obj-Task2/releases/tag/v0.42)
+## [v0.4](https://github.com/ugniusado/Obj-Task2/releases/tag/v0.43)
 
 Objektinio programavimo 2-os v0.4 užduoties repozitorija
 
