@@ -72,3 +72,22 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 | --------- |:----:| :-----:|:------:|:--------:|
 |Std::vector| 0.07s| 0.3s   | 0.6s   | 2.8s     |
 
+## [v0.5.deque](https://github.com/ugniusado/Obj-Task2/releases/tag/v0.5.deque)
+## [v0.5.list](https://github.com/ugniusado/Obj-Task2/releases/tag/v0.5.list)
+
+**KOMPIUTERIO SPECS CPU - Intel i5 8kartos 1.6GHz; RAM 2x4 2400MHz, SSD 256GB - speed 682 MB/s**
+
+**Generavimo greitis:**
+|Konteineris|1000  | 10000  | 100000 |
+| --------- |:----:| :-----:|:------:|
+|Std::vector| 2.6s | 3.8s   | 7.6s   | 
+|Std::Deque | 0.28s| 2.61s  | 31.01s |
+|Std::list  | 0.3s | 2.9s   | 37.3s  |
+
+**Skirstymo ir spausdinimo greitis:**
+|Konteineris| 1000  |10000    | 100000   |
+| --------- |:-----:| :------:|:--------:|
+|Std::vector| 1.7s  |11.5s    |  23.5s   |
+|Std::Deque | 0.93s | 33.6s   | 65.5s    |
+|Std::List  | 0.46s | 19.3s   | 35.7s    |
+
