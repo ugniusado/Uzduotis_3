@@ -91,7 +91,7 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 |Std::Deque | 0.93s | 33.6s   | 65.5s    |
 |Std::List  | 0.46s | 19.3s   | 35.7s    |
 
-## [Versija V1.0]()
+## [Versija V1.0](https://github.com/ugniusado/Obj-Task2/releases/tag/v1.0)
 **Pirmoji strategija** Užtrunka atitinkamai ilgiau ir nesunku, pastebėti kodėl, o gi todėl, kad užima pakankamai daug atminties ir atminties atžvilgiu nėra efektyvu. v1.0.H 1_realizavimo.cpp 1_realizavimo_main.cpp
 
 
