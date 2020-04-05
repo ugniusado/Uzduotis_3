@@ -97,7 +97,7 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 
 **Antroji strategija** Efektyviau atminties atžvilgiu, neaišku, kiek man antrąją strategiją pavyko realizuoti. v1.2.h 2_realizavimo.cpp 2_realizavimo_main.cpp
 
- **Vykdant pirmąją realizaciją neefektyviai buvo naudojama atmintis, bei programa veikė lėčiau, antrąją vykdant darbas pagreitėjo. 
+ **Vykdant pirmąją realizaciją neefektyviai buvo naudojama atmintis, bei programa veikė lėčiau, antrąją vykdant darbas pagreitėjo. **
  
  **Generavimo greitis:**
  
