@@ -91,3 +91,18 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 |Std::Deque | 0.93s | 33.6s   | 65.5s    |
 |Std::List  | 0.46s | 19.3s   | 35.7s    |
 
+## [Versija V1.0]()
+**Pirmoji strategija** Užtrunka atitinkamai ilgiau ir nesunku, pastebėti kodėl, o gi todėl, kad užima pakankamai daug atminties ir atminties atžvilgiu nėra efektyvu. v1.0.H 1_realizavimo.cpp 1_realizavimo_main.cpp
+
+
+**Antroji strategija** Efektyviau atminties atžvilgiu, neaišku, kiek man antrąją strategiją pavyko realizuoti. v1.2.h 2_realizavimo.cpp 2_realizavimo_main.cpp
+
+ **Vykdant pirmąją realizaciją neefektyviai buvo naudojama atmintis, bei programa veikė lėčiau, antrąją vykdant darbas pagreitėjo. 
+ 
+ **Generavimo greitis:**
+ 
+
+|Konteineris  | 1000  | 10000 | 100000 |
+| ---------   |:----: |:-----:|:------:|
+|Std::vector_1| 0.4s  |3.9s   | 35.2  s|
+|Std::vector_2| 0.03s |0.2s   | 14.3  s|
