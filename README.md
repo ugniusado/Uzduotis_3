@@ -120,7 +120,7 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 |Output       | 0.162s|2.1s   |
 
 
-#### Klasei su -O1 flag'u (10k studentų ir 100k studentų):
+#### Klasei -O1 flagas (10k studentų ir 100k studentų):
 
 |Type         | 10k   | 100k  |
 | ---------   |:----: |:-----:|
@@ -129,7 +129,7 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 |Output       | 0.654s|0.42s  |
 
 
-#### Klasei su -O2 flag'u (10k studentų, 100k studentų):
+#### Klasei -O2 flagas (10k studentų, 100k studentų):
 
 |Type         | 10k   | 100k  |
 | ---------   |:----: |:-----:|
@@ -138,7 +138,7 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 |Output       | 0.456s|0.57s  |
 
 
-#### Klasei su -O3 flag'u (10k studentų, 100k studentų):
+#### Klasei -O3 flagas (10k studentų, 100k studentų):
 
 |Type         | 10k    | 100k  |
 | ---------   |:----:  |:-----:|
