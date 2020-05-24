@@ -125,7 +125,7 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 |Std::vector_2| 0.03s |0.2s   | 14.3  s|
 
 
-## [Versija V1.1](https://github.com/ugniusado/Obj-Task2/releases/tag/v1.0)
+## [Versija V1.1](https://github.com/ugniusado/Uzduotis_3/releases/tag/v1.1)
 
 1.Pridėta klasės struktūra.
 
