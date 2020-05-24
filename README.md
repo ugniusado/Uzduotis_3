@@ -101,8 +101,47 @@ Nuskriaustu ir Kieteku skirstymas i failus:
  
  **Generavimo greitis:**
  
-
 |Konteineris  | 1000  | 10000 | 100000 |
 | ---------   |:----: |:-----:|:------:|
 |Std::vector_1| 0.4s  |3.9s   | 35.2  s|
 |Std::vector_2| 0.03s |0.2s   | 14.3  s|
+
+
+
+## [Versija V1.1](https://github.com/ugniusado/Obj-Task2/releases/tag/v1.0)
+
+
+#### Klasė be flag'ų (10k studentų ir 100k studentų):
+
+|Type         | 10k   | 100k  |
+| ---------   |:----: |:-----:|
+|Input        | 0.7s  |7.85s  |
+|Sort         | 1.27s |14.32s |
+|Output       | 0.162s|2.1s   |
+
+
+#### Klasei su -O1 flag'u (10k studentų ir 100k studentų):
+
+|Type         | 10k   | 100k  |
+| ---------   |:----: |:-----:|
+|Input        | 0.04s |0.53s  |
+|Sort         | 0.09s |0.876s |
+|Output       | 0.654s|0.42s  |
+
+
+#### Klasei su -O2 flag'u (10k studentų, 100k studentų):
+
+|Type         | 10k   | 100k  |
+| ---------   |:----: |:-----:|
+|Input        | 0.02s |0.32s  |
+|Sort         | 0.08s |0.654s |
+|Output       | 0.456s|0.57s  |
+
+
+#### Klasei su -O3 flag'u (10k studentų, 100k studentų):
+
+|Type         | 10k    | 100k  |
+| ---------   |:----:  |:-----:|
+|Input        | 0.013s |0.23s  |
+|Sort         | 0.059s |0.432s |
+|Output       | 0.0345s|0.299s  |
