@@ -12,6 +12,24 @@ Objektinio programavimo 2-os užduoties repozitorija
 
 • *Visos kitos instrukcijos bus rodomos konsolėje*
 
+##### Diegimo instrukcija (Windows/Unix platformoms):
+
+1. Parsisiųskite naujausią release'ą
+
+2. Linux OS:
+
+   1. Terminale parašykite komandą `make`
+   
+   2. Jei naujai sukurtas Application paleidžiamasis failas nepasileidžia, Terminale padarykite jį paleidžiamuoju - komanda `chmod a+x hello`
+
+3. Windows OS, naudojant MinGW aplinką:
+
+   1. Terminale parašykite komandą ` mingw32-make `
+
+4. Paleiskite programą komanda `./App` arba rankiniu būdu.
+
+5. Norėdami išvalyti sukurtus failus naudokite komandą `make clean` (Unix OS) arba `mingw32-make clean` (Windows OS naudojant MinGW aplinką).
+
 ## [v0.1](https://github.com/ugniusado/Obj-Task2/releases/tag/v0.14)
 
 Šioje versijoje programa nuskaito Studentų vardus ir pavardes, susumuoja jų suvestus pažymius, gauna vidurkius, išveda galutinį rezultatą, bei medianą.
@@ -107,10 +125,11 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 |Std::vector_2| 0.03s |0.2s   | 14.3  s|
 
 
-
 ## [Versija V1.1](https://github.com/ugniusado/Obj-Task2/releases/tag/v1.0)
 
+1.Pridėta klasės struktūra.
 
+2.Galim atlikti skaičiavimus su vector tipo klase.
 #### Klasė be flag'ų (10k studentų ir 100k studentų):
 
 |Type         | 10k   | 100k  |
