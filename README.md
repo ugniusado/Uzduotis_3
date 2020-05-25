@@ -168,4 +168,5 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 ## [Versija V1.2](https://github.com/ugniusado/Uzduotis_3/releases/tag/v1.1)
 
 1.Pridėtas MakeFile
+
 2.Pridėta operatorių overloadinimo galimybė (<<, +=, *=, -=)
