@@ -12,6 +12,24 @@ Objektinio programavimo 2-os užduoties repozitorija
 
 • *Visos kitos instrukcijos bus rodomos konsolėje*
 
+##### Diegimo instrukcija (Windows/Unix platformoms):
+
+1. Parsisiųskite naujausią release'ą
+
+2. Linux OS:
+
+   1. Terminale parašykite komandą `make`
+   
+   2. Jei naujai sukurtas Application paleidžiamasis failas nepasileidžia, Terminale padarykite jį paleidžiamuoju - komanda `chmod a+x hello`
+
+3. Windows OS, naudojant MinGW aplinką:
+
+   1. Terminale parašykite komandą ` mingw32-make `
+
+4. Paleiskite programą komanda `./App` arba rankiniu būdu.
+
+5. Norėdami išvalyti sukurtus failus naudokite komandą `make clean` (Unix OS) arba `mingw32-make clean` (Windows OS naudojant MinGW aplinką).
+
 ## [v0.1](https://github.com/ugniusado/Obj-Task2/releases/tag/v0.14)
 
 Šioje versijoje programa nuskaito Studentų vardus ir pavardes, susumuoja jų suvestus pažymius, gauna vidurkius, išveda galutinį rezultatą, bei medianą.
@@ -101,8 +119,48 @@ Nuskriaustu ir Kieteku skirstymas i failus:
  
  **Generavimo greitis:**
  
-
 |Konteineris  | 1000  | 10000 | 100000 |
 | ---------   |:----: |:-----:|:------:|
 |Std::vector_1| 0.4s  |3.9s   | 35.2  s|
 |Std::vector_2| 0.03s |0.2s   | 14.3  s|
+
+
+## [Versija V1.1](https://github.com/ugniusado/Uzduotis_3/releases/tag/v1.1)
+
+1.Pridėta klasės struktūra.
+
+2.Galim atlikti skaičiavimus su vector tipo klase.
+#### Klasė be flag'ų (10k studentų ir 100k studentų):
+
+|Type         | 10k   | 100k  |
+| ---------   |:----: |:-----:|
+|Input        | 0.7s  |7.85s  |
+|Sort         | 1.27s |14.32s |
+|Output       | 0.162s|2.1s   |
+
+
+#### Klasei -O1 flagas (10k studentų ir 100k studentų):
+
+|Type         | 10k   | 100k  |
+| ---------   |:----: |:-----:|
+|Input        | 0.04s |0.53s  |
+|Sort         | 0.09s |0.876s |
+|Output       | 0.654s|0.42s  |
+
+
+#### Klasei -O2 flagas (10k studentų, 100k studentų):
+
+|Type         | 10k   | 100k  |
+| ---------   |:----: |:-----:|
+|Input        | 0.02s |0.32s  |
+|Sort         | 0.08s |0.654s |
+|Output       | 0.456s|0.57s  |
+
+
+#### Klasei -O3 flagas (10k studentų, 100k studentų):
+
+|Type         | 10k    | 100k  |
+| ---------   |:----:  |:-----:|
+|Input        | 0.013s |0.23s  |
+|Sort         | 0.059s |0.432s |
+|Output       | 0.0345s|0.299s  |
