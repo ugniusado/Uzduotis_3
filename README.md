@@ -164,3 +164,8 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 |Input        | 0.013s |0.23s  |
 |Sort         | 0.059s |0.432s |
 |Output       | 0.0345s|0.299s  |
+
+## [Versija V1.2](https://github.com/ugniusado/Uzduotis_3/releases/tag/v1.1)
+
+1.Pridėtas MakeFile
+2.Pridėta operatorių overloadinimo galimybė (<<, +=, *=, -=)
