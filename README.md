@@ -179,3 +179,5 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 ![klasės](https://github.com/ugniusado/Uzduotis_3/blob/v1.5/Screenshot_9.png)
 
 2.Sutvarkyta, kad bazinėje klasėje(Person klasėje negalima sukurti Student objektų)
+
+3. Pridėta template <typename T1>, prie kai kurių funkcijų, kad pavyktų išvenkti .obj ir .exe error'ų.
