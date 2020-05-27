@@ -170,3 +170,14 @@ Nuskriaustu ir Kieteku skirstymas i failus:
 1.Pridėtas MakeFile
 
 2.Pridėta operatorių overloadinimo galimybė (<<, +=, *=, -=)
+
+
+## [Versija V1.5](https://github.com/ugniusado/Uzduotis_3/releases/tag/v1.2)
+
+1. Student klasė, padalinta į dvi klases: į Person klasę, bei Student klasę.
+
+![klasės](https://github.com/ugniusado/Uzduotis_3/blob/v1.5/Screenshot_9.png)
+
+2. Sutvarkyta, kad bazinėje klasėje(Person klasėje negalima sukurti Student objektų)
+
+3. Pridėta template <typename T1>, prie kai kurių funkcijų, kad pavyktų išvenkti .obj ir .exe error'ų.

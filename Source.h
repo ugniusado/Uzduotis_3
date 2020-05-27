@@ -10,8 +10,6 @@
 #include <cmath>
 #include <fstream>
 #include <ctime>
-#include <deque>
-#include <list>
 #include <iterator>
 #include <chrono>
 
@@ -23,7 +21,8 @@ using std::string;
 
 
 int decision();
-void DataRead(vector<Stud>& Student, int& longName, int& longSurn)
+template<typename T1>
+void DataRead(T1& Student, int& longName, int& longSurn)
 {
 	string Last;
 	int a, sum, b = 0;
@@ -72,24 +71,25 @@ void DataGenerate(vector<Stud>& Student, int y);
 void DataInput(vector<Stud>& Student, int& longName, int& longSurn);
 bool SortByLast(const Stud& a, const Stud& b);
 bool compare(const Stud& a, const Stud& b);
-void DataDis(vector<Stud>& Students, vector<Stud>& Nuskriaustieji)
+template<typename T1, typename T2, typename T3>
+void DataDis(T1& Student, T2& Nuskriaustieji, T3& Kietiakai)
 {
-	std::sort(Students.begin(), Students.end(), compare);
-	std::sort(Students.begin(), Students.end(), SortByLast);
-	int x = Students.size();
+	std::sort(Student.begin(), Student.end(), compare);
+	std::sort(Student.begin(), Student.end(), SortByLast);
+	int x = Student.size();
 	for (int i = 0; i < x; i++)
 	{
-		if (Students.at(i).GetLast() < 5)
+		if (Student.at(i).GetLast() < 5)
 		{
-			Nuskriaustieji.push_back(Students.at(i));
-			Students.erase(Students.begin() + i);
+			Nuskriaustieji.push_back(Student.at(i));
+			Student.erase(Student.begin() + i);
 			i--;
 			x--;
 		}
 	}
 };
-
-void DataOutput(vector<Stud>Student, int longName, int longSurn, string x)
+template<typename T>
+void DataOutput(T Student, int longName, int longSurn, string x)
 {
 	auto it = Student.begin();
 	std::ofstream fout(x);
